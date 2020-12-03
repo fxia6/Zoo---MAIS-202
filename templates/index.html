@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+        <title>Zoo Animal Classification</title>
+    </head>
+    <body>
+        <h1> Hello, I am an akinator! </h1>
+        <img src='static\akinator.png', alt="The Akinator", width="128",height="128">
+        <p> Let me guess what type of animal you have in mind</p>
+        <p> Please enter "yes" or "no" for the following questions except for the leg question (For the leg question, enter a number of legs) and click submit</p>
+
+        <form method='POST', action="{{url_for("make_prediction")}}">
+            <br> Does it have hair? : <input type="text", name="hair">  <br>
+            <br> Does it have feather? : <input type="text", name="feather">  <br>
+            <br> Does it lay eggs? : <input type="text", name="eggs"> <br>
+            <br> Does it produce milk? : <input type="text", name="milk"> <br>
+            <br> Does it live in the sky? : <input type="text", name="airborne"> <br>
+            <br> Does it live in the ocean? : <input type="text", name="aquatic"> <br>
+            <br> Is it a predator? : <input type="text", name="predator"> <br>
+            <br> Does it have teeth? : <input type="text", name="toothed"> <br>
+            <br> Does it have backbones? : <input type="text", name="backbone"> <br>
+            <br> Does it breathe? : <input type="text", name="breathes"> <br>
+            <br> Is it venemous? : <input type="text", name="venemous"> <br>
+            <br> Does it have fins? : <input type="text", name="fins"> <br>
+            <br> How many legs does it have? : <input type="text", name="legs"> <br>
+            <br> Does it have a tail? : <input type="text", name="tail"> <br>
+            <br> Is it domestic? : <input type="text", name="domestic"> <br>
+            <br> Is it a cat? : <input type="text", name="catsize"> <br>
+
+            <br> <input type="submit", value="submit"> <br>
+        </form>
+
+    </body>
+</html>
