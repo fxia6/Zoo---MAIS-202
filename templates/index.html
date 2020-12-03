@@ -8,7 +8,9 @@
         <h1> Hello, I am an akinator! </h1>
         <img src='static\akinator.png', alt="The Akinator", width="128",height="128">
         <p> Let me guess what type of animal you have in mind</p>
-        <p> Please enter "yes" or "no" for the following questions except for the leg question (For the leg question, enter a number of legs) and click submit</p>
+        <p> Please enter "yes" or "no" for the following questions except for the leg question and click submit</p>
+        <p> For the leg question, enter a number of legs </p>
+        <p> If you are unsure about an answer, you might leave it blank </p>
 
         <form method='POST', action="{{url_for("make_prediction")}}">
             <br> Does it have hair? : <input type="text", name="hair">  <br>
